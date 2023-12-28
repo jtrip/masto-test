@@ -1,11 +1,12 @@
 # masto-test
-just some tests for mastodon.py
+just a playground for mastodon.py, mostly convenience functions for playing in the repl.
 
-requires on a `poster` app being created on the host
+requires an app named `poster` being created on the host
 and `config.toml` file with the following format:
 
 ```toml
 api_base_url=''
+
 [poster-creds]
 client_id=''
 client_secret=''
