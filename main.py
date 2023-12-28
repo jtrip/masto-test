@@ -39,6 +39,12 @@ def post_msg(client, msg):
     client.toot(msg)
 
 
+def post_img(client, img):
+    """Upload image and create a status post with the name and it attached."""
+    media_dict = client.media_post(f'input/{img}')
+    client.status_post(img, media_ids=[media_dict['id']])
+
+
 def load_config():
     with open('config.toml', 'rb') as f:
         return tomllib.load(f)
