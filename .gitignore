@@ -1,2 +1,9 @@
-venv/
+# APP
 config.toml
+
+# IDE
+.idea/
+
+# Python
+venv/
+__pycache__/
